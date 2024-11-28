@@ -1,0 +1,194 @@
+/* Dashboard.css */
+
+/* General Styling */
+.dashboard-container {
+    padding: 2px;
+    height: 80vh;  
+    width: 100%;   
+    overflow: auto; 
+  }
+  
+  
+  .header {
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 20px
+  }
+  
+  .chart-map-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  /* Pie Chart */
+  .pie-container {
+    display: flex;               /* Flexbox to arrange pie charts in a row */
+    justify-content: space-around; /* Spacing between the pie charts */
+    align-items: center;         /* Center align vertically */
+    gap: 10px;                   /* Optional: Add space between pie charts */
+  }
+  
+  .pie-chart {
+    display: flex;
+    width: 200px;                /* Fixed width for pie charts */
+    height: 200px;               /* Fixed height for pie charts */
+    justify-content: center;     /* Center pie chart items */
+    align-items: center;         /* Align pie chart contents (like legend, tooltips) */
+    margin: 0 10px;              /* Optional: margin to separate pie charts */
+  }
+  
+  
+  /* Map */
+  .map-container {
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .alert-box {
+    width: 15%;
+    height: 400px; 
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  
+  /* Alert Header (Ellipse with Text) */
+  .alert-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f5c6cb; 
+    color: #721c24;
+    padding: 10px 20px;
+    border-radius: 50px; 
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;  
+    gap: 10px; 
+    margin: 0;
+  }
+  
+  
+  /* Adding the warning icon to the header */
+  .alert-box h3::before {
+    font-family: "Font Awesome 5 Free"; /* Make sure to include Font Awesome in your project */
+    font-weight: 900; /* Makes the icon bold */
+    font-size: 1.5rem;
+    color: #721c24; /* Icon color */
+  }
+  
+  /* Alert Message Text with Warning Icon */
+  .alert-box p {
+    font-size: 0.8rem;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the icon and the text */
+  }
+  
+  /* Adding the warning icon to each alert message */
+  .alert-box p::before {
+    content: "\f071"; /* Font Awesome warning icon */
+    font-family: "Font Awesome 5 Free"; /* Make sure to include Font Awesome in your project */
+    font-weight: 900; /* Makes the icon bold */
+    font-size: 1rem;
+    color: #721c24; /* Icon color */
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0f0f0f;
+    padding: 10px 0;
+  }
+  .footer a{
+    margin-left: 400px;
+    color:#fff
+   
+  }
+  /* index.css */ 
+
+/* Dialog container */
+/* Dialog container styling */
+.MuiDialog-paper {
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* Dialog title */
+.MuiDialogTitle-root {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Dialog content */
+.MuiDialogContent-root {
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* List items */
+.MuiListItem-root {
+  font-size: 1rem;
+  color: #555;
+  padding: 8px 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 4px 0;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Line chart container */
+.line-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Dialog actions (buttons) */
+.MuiDialogActions-root {
+  padding: 20px 24px;
+  justify-content: center;
+}
+
+.MuiButton-root {
+  text-transform: none;
+  padding: 8px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.MuiButton-root:hover {
+  background-color: #0056b3;
+}
